@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:jobby/Screens/Signin_Screen.dart';
 import 'package:jobby/Widgets/Custom_Textfield.dart';
 import 'package:jobby/Widgets/Main_Button.dart';
 import 'package:jobby/constants.dart';
@@ -154,7 +155,9 @@ class _SignupScreenState extends State<SignupScreen> {
                           TextSpan(
                             text: 'SignIn',
                             style: TextStyle(fontWeight: FontWeight.w600),
-                            recognizer: TapGestureRecognizer()..onTap = () {},
+                            recognizer: TapGestureRecognizer()..onTap = () {
+                              Navigator.pushNamed(context, SigninScreen.route);
+                            },
                           ),
                         ],
                       ),

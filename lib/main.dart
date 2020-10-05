@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jobby/Screens/Signin_Screen.dart';
 import 'package:jobby/Screens/Signup_Screen.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(fontFamily: 'Montserrat'),
       routes: {
         SignupScreen.route : (context) => SignupScreen(),
-
+        SigninScreen.route : (context) => SigninScreen(),
       },
     );
   }
