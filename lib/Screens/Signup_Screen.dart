@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:jobby/Screens/HomeScreen.dart';
 import 'package:jobby/Screens/Signin_Screen.dart';
 import 'package:jobby/Widgets/Custom_Textfield.dart';
 import 'package:jobby/Widgets/Main_Button.dart';
@@ -82,7 +83,9 @@ class _SignupScreenState extends State<SignupScreen> {
                             height: 50,
                           ),
                           MainActionButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushNamed(context, HomeScreen.route);
+                              },
                             label: 'SignUp',
                           ),
                         ],
@@ -116,7 +119,8 @@ class _SignupScreenState extends State<SignupScreen> {
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 30),
                       width: MediaQuery.of(context).size.width,
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () {
+                        },
                         padding: EdgeInsets.all(15.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
